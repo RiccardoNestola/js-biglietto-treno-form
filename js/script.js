@@ -42,11 +42,15 @@ button.addEventListener("click",function(){
 
     if (parseInt(ageInput.value)  < 18) {
         console.log(priceTicket.value);
-        output.innerHTML = "Il prezzo del biglietto è di " + (priceTicket = ((priceTicket * 17.5) / 100)) + "€";
+        output.innerHTML = "Il prezzo del biglietto è di " + (priceTicket = ((priceTicket * 17.5) / 100)).toFixed(2) + "€";
     }
     else if (parseInt(ageInput.value) >= 65) {
         console.log(priceTicket);
-        output.innerHTML = "Il prezzo del biglietto è di " + (priceTicket = ((priceTicket * 33.3) / 100)) + "€";
+        output.innerHTML = "Il prezzo del biglietto è di " + (priceTicket = ((priceTicket * 33.3) / 100)).toFixed(2) + "€";
+    }
+    else  {
+        console.log(priceTicket);
+        output.innerHTML = "Il prezzo del biglietto è di " + priceTicket.toFixed(2) + "€";
     }
         
     })
