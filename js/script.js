@@ -40,6 +40,9 @@ button.addEventListener("click",function(){
     console.log(kmInput.value + "km");
     console.log(ageInput.value + "anni");
 
+    document.getElementById("kmOutput").innerHTML = "Km inseriti: " + kmInput.value;
+    document.getElementById("ageOutput").innerHTML = "Anni inseriti: " + ageInput.value;
+
     if (parseInt(ageInput.value)  < 18) {
         console.log(priceTicket);
         output.innerHTML = "Il prezzo del biglietto è di " + (priceTicket - ((priceTicket * 17.5) / 100)).toFixed(2) + "&euro;";
