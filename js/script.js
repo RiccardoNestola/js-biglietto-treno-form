@@ -18,10 +18,10 @@ Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagi
  */
 
 
-const kmInput = document.querySelector("input#kmNumber");
+const kmInput = document.getElementById("kmNumber");
 console.log(kmInput);
 
-const ageInput = document.querySelector("input#ageNumber");
+const ageInput = document.getElementById("ageNumber");
 console.log(ageInput);
 
 const output = document.getElementById("output");
